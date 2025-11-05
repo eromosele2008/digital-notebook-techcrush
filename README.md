@@ -85,13 +85,13 @@ It helps users monitor their business performance by recording transactions and 
   }
 }
 ```
-
-#### **2. Expenses Endpoints**
 ---
+#### **2. Expenses Endpoints**
+
 #### ➤ Create Expenses  
 #### POST http://localhost:3000/api/expenses  
 **Payload:**
----
+
 ```json
 
 {
@@ -124,7 +124,7 @@ It helps users monitor their business performance by recording transactions and 
 ---
 #### ➤ Get Total Sales Endpoint
 #### GET http://localhost:3000/api/sales/total
----
+
 #### Response
 ```json
 {
@@ -134,8 +134,8 @@ It helps users monitor their business performance by recording transactions and 
 ---
 #### 3. Profit & Loss Endpoint
 #### ➤ Get Profit & Loss Summary
-GET http://localhost:3000/api/reports/profit-loss
----
+#### GET http://localhost:3000/api/reports/profit-loss
+
 ### Response (Profit)
 ```json
 {
@@ -146,15 +146,17 @@ GET http://localhost:3000/api/reports/profit-loss
 }
 ```
 
-### Response (Loss)
-
+#### Response (Loss)
+```json
 {
   "totalSales": 50000,
   "totalExpenses": 100000,
   "profitOrLoss": -50000,
   "status": "Loss"
 }
-
+```
+---
 #### Testing
 
 Use Postman, Swagger UI, or Thunder Client to test all endpoints above.
+---
